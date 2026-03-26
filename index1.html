@@ -83,12 +83,14 @@ var discount = calculateDiscount(subtotal, custype.value);
 var total2 = subtotal - discount;
 
 //Print the service label 
-var serviceLabel = "";
-if (serv === "dental") {
+var serv1 = document.getElementById("serv").value; 
+var serviceLabel = ""; 
+
+if (serv1 === "dental") {
     serviceLabel = "Dental Check-up (PHP 850)";
-} else if (serv ==="eye") {
-    serviceLabel = "Dental Check-up (PHP 850)";
-} else if (serv === "phys") {
+} else if (serv1 === "eye") {
+    serviceLabel = "Eye Exam (PHP 850)"; 
+} else if (serv1 === "phys") {
     serviceLabel = "Physical Exam (PHP 800)";
 }
 
